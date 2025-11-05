@@ -1,0 +1,18 @@
+# Python 3.10+ Environment Requirements
+
+# --- For the Producer (IotSystem_Version1.1.py) ---
+
+# Used by the producer to connect and send messages to Kafka
+kafka-python
+
+
+# --- For the Spark Consumer (Spark_Transformation_v1.0.py) ---
+
+# The core PySpark library. Version should match your Spark installation (e.g., 4.0.0)
+pyspark
+
+# Required for Pandas UDFs (e.g., the ML anomaly detection function)
+pandas
+
+# Required by Spark for high-performance data transfer to/from Pandas UDFs
+pyarrow
